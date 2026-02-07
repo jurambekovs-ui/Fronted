@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>My team</title>
+</head>
+<body>
+       <header class="site-header">
+        <div class="container header">
+            <div class="header__logo-wrapper">
+                <a class="header_logo-link" href="">
+                    <img class="header__logo-img"  src="./images/myteam 2.svg" alt="">
+                </a>
+                <nav class="header__navbar navbar">
+                    <a class="navbar__item" href="#">home</a>
+                    <a class="navbar__item" href="#">about</a>
+
+                </nav>                
+            </div>
+         <a class="header_contact-link" href="tel+998916677576">contact us</a>
+         <button class="header__menu-btn">
+            <img onclick="handleMenuShow()" src="./images/menu.svg" alt="Menu icon" width="20" height="17" >
+         </button>
+
+        </div>
+       </header>
+       <main class="site-main">
+        <section class="hero-section">
+            <div class="container hero">
+                <h1 class="hero__title">About</h1>
+                <div class="hero__content-wrapper">
+                   <span class="hero__line"></span>
+                   <p class="hero__desc">We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.</p>
+                </div>
+        </div>
+        </section>
+       </main>
+
+       <div id="wrapper" class="modal-wrapper">
+          <div class="modal-inner menu ">
+            <button onclick="handleClose()" class="menu__close-icon">
+            <img src="./images/CLOSE.svg" alt="menu__close icon" width="16" height="16">
+            </button>
+            <div class="menu-wrapper">
+                <a class="menu__item" href="#">home</a>
+                <a class="menu__item" href="#">about</a>
+            <button class="menu__btn">contact us</button>
+
+            </div>
+          </div>
+       </div>
+
+
+
+
+              <!-- Meet the directors -->
+       <section class="directors-section">
+           <div class="container">
+               <h2 class="section-title">Meet the directors</h2>
+
+               <div class="directors-grid">
+                   <div class="director-card">
+                       <div class="director-photo">
+                           <img src="./images/nikita.svg" alt="Nikita Markova">
+                       </div>
+                       <h3 class="director-name">Nikita Markova</h3>
+                       <p class="director-role">Founder & CEO</p>
+                       <button class="director-toggle">+</button>
+                   </div>
+
+                   <div class="director-card">
+                       <div class="director-photo">
+                           <img src="./images/crist.svg" alt="Cristian Duncan">
+                       </div>
+                       <h3 class="director-name">Cristian Duncan</h3>
+                       <p class="director-role">Co-founder & COO</p>
+                       <button class="director-toggle">+</button>
+                   </div>
+
+                   <div class="director-card">
+                       <div class="director-photo">
+                           <img src="./images/cruz.svg" alt="Cruz Hamer">
+                       </div>
+                       <h3 class="director-name">Cruz Hamer</h3>
+                       <p class="director-role">Co-founder & CTO</p>
+                       <button class="director-toggle">+</button>
+                   </div>
+
+                   <div class="director-card">
+                       <div class="director-photo">
+                           <img src="./images/drake.svg" alt="Drake Heaton">
+                       </div>
+                       <h3 class="director-name">Drake Heaton</h3>
+                       <p class="director-role">Business Development Lead</p>
+                       <button class="director-toggle">+</button>
+                   </div>
+
+                   <div class="director-card">
+                       <div class="director-photo">
+                           <img src="./images/wise.svg" alt="Griffin Wise">
+                       </div>
+                       <h3 class="director-name">Griffin Wise</h3>
+                       <p class="director-role">Lead Marketing</p>
+                       <button class="director-toggle">+</button>
+                   </div>
+
+                   <div class="director-card quote-card">
+                       <div class="director-photo">
+                       </div>
+                       <h3 class="director-name">Aden Allan</h3>
+                       <p class="director-quote">"Empowered teams create truly amazing products. Set them free!"</p>
+                       <div class="director-social">
+                           <a href="#"><img src="./images/twiter.svg" alt="Twitter"></a>
+                           <a href="#"><img src="./images/linkin.svg" alt="LinkedIn"></a>
+                           <button class="director-toggle">+</button>
+                           
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <!-- Some of our clients -->
+<section class="clients-section">
+    <div class="container">
+        <h2 class="section-title">Some of our clients</h2>
+
+        <div class="clients-image-wrapper">
+            <img 
+                src="./images/cliets.svg" 
+                alt="Some of our clients: THE VERGE, TheJakartaPost, The Guardian, techradar, GADGETS NOW"
+                class="clients-image"
+            >
+        </div>
+    </div>
+</section>
+
+       <!-- Ready to get started? -->
+       <section class="cta-section">
+           <div class="container">
+               <h2 class="cta-title">Ready to get started?</h2>
+               <a href="#" class="cta-button">contact us</a>
+           </div>
+       </section>
+
+   </main>
+
+   <!-- Footer -->
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="./images/myteam 2.svg" alt="myteam" class="footer-logo">
+                </a>
+
+                <nav class="footer-nav">
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                </nav>
+            </div>
+
+            <address class="footer-center">
+                987 Hillcrest Lane<br>
+                Irvine, CA<br>
+                California 92714<br>
+                Call Us : +1 949 833 7432
+            </address>
+
+            <div class="footer-right">
+                <div class="footer-social">
+                    <a href="#"><img src="./images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="./images/chrom.svg" alt="Pinterest"></a>
+                    <a href="#"><img src="./images/twiter.svg
+                        " alt="Twitter"></a>
+                </div>
+
+                <p class="copyright">Copyright 2020. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
